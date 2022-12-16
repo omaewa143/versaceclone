@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem;
+}
+
+.info {
+    background-color: #212121;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info a {
+    color: #fff;
+    font-size: 0.79rem;
+    font-weight: 400;
+}
+
+.navbar {
+    width: 100%;
+    height: 4rem;
+    background-color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-left: 0.375rem;
+}
+
+.burger-icon {
+    background-image: url('https://www.versace.com/on/demandware.static/Sites-INT-Site/-/default/v1670995085572/images/svg-sprite.svg#icon-header-burger');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    width: 27px;
+    height: 20px;
+}
+
+.left-nav svg {
+    height: 1.375rem;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search {
+    background-image: url('https://www.versace.com/on/demandware.static/Sites-INT-Site/-/default/v1670995085572/images/svg-sprite.svg#icon-header-search');
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: center;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.bag {
+    background-image: url('https://www.versace.com/on/demandware.static/Sites-INT-Site/-/default/v1670995085572/images/svg-sprite.svg#icon-header-bag');
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: center;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+    color: #fff;
+    margin-top: auto;
+    padding: 4rem 0 40px
+}
+
+.footer-links {
+    display: flex;
+    width: 100%;
+    padding: 0 1.5rem 2rem;
+    justify-content: space-between;
+}
+
+.link-sections {
+    display: flex;
+    gap: 1rem;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 0 0 30%;
+}
+
+.link-column h2 {
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.link-column li a {
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.socials .currency {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.social-sites {
+    display: flex;
+}
+
+.social-sites ul {
+    display: flex;
+    margin: 0;
+    gap: 1rem;
+}
+
+.social-sites ul li {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-sites ul li a svg {
+    fill: #fff;
+}
+
+.insta svg,
+.facebook svg,
+.twitter svg,
+.pinterest svg,
+.youtube svg,
+.linkedin svg,
+.wechat svg,
+.weibo svg {
+    height: 1rem;
+    width: 1rem;
+    display: block;
+}
+
+.copyright {
+    padding: 1.5rem 1.5rem 0;
+    font-size: 8.96px;
+    color: #e0e0e0;
+}
+
+.page {
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    background-image: url('https://www.versace.com/on/demandware.static/-/Library-Sites-ver-shared-trans/default/dw0efd8305/images/homepage/holiday-hero-2-011222-desk.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 53.434vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.sticky-header {
+    position: sticky;
+    bottom: 0px;
+    margin-top: auto;
+    width: 100%;
+}
+
+.header-group {
+    position: relative;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1.5rem 5rem;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+}
+
+.header {
+    font-size: 2.625rem;
+    color: #fff;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+}
+
+.subheader {
+    padding: 0.5rem;
+    background-color: #fafafa;
+    font-size: 14px;
+    font-weight: 800;
+    color: #212121;
+    text-align: center;
+}
+
+.timer {
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff33;
+    backdrop-filter: blur(50px);
+    border-top: 4px solid white;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 0 1.5rem;
+}
+
+.switch {
+    height: 1.5rem;
+    width: 70px;
+    border-radius: 0.75rem;
+    border: 1px solid #212121;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.switch::after {
+    content: '';
+    height: 90%;
+    aspect-ratio: 1;
+    background-color: #212121;
+    display: block;
+    border-radius: 50px;
+    position: absolute;
+    margin: calc(70px / 50);
+}
+
+.indicator {
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.women {
+    color: #e0e0e0;
+}
+
+.men {
+    color: #212121;
+}
+
+.highlights {
+    width: 100%;
+    height: 30.6vw;
+    padding: 0 1.5rem;
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.highlight {
+    height: 100%;
+    flex: 1 1 40%;
+    display: flex;
+}
+
+.items {
+    height: 100%;
+    flex: 1 1 60%;
+    display: flex;
+    gap: 2px
+}
+
+.highlight .image {
+    background-image: url('https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw80c60c86/original/90_1008126-1A00638_4J120_20_VarsityLogoRing-Rings-versace-online-store_0_0.jpg?sw=450&sh=632&sm=fit&sfrm=jpg');
+    height: 100%;
+    flex: 0 0 60%;
+    background-size: cover;
+}
+
+.highlight .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem 0 1.5rem;
+    gap: 0.5rem
+}
+
+.highlight .title .item-name {
+    font-size: 1.4rem;
+    line-height: 1;
+    margin: 0;
+}
+
+.highlight .title .price {
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+}
+
+.item {
+    flex: 1 1 calc(100%/3);
+    display: flex;
+    flex-direction: column;
+}
+
+.item .image {
+    flex: 0 0 80%;
+    height: 100%;
+    background-size: cover;
+}
+
+.item .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    flex: 0 0 20%;
+}
+
+.item .title .item-name {
+    font-size: 14px;
+    margin: 0;
+}
+
+.item .title .price {
+    font-size: 12px;
+    margin: 0;
+}
+
+.item:first-child .image {
+    background-image: url('https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dwba6f3133/original/90_DP87631-1A03190_1B00V_20_MedusaBiggiePouch-Pouches-versace-online-store_1_2.jpg?sw=450&sh=632&sm=fit&sfrm=jpg');
+}
+
+.item:nth-child(2) .image {
+    background-image: url('https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw8b7df6b8/original/90_1008969-1A06408_2B510_10_BaroccoSilhouetteT-Shirt-T-shirts-versace-online-store_0_2.jpg?sw=450&sh=632&sm=fit&sfrm=jpg');
+}
+
+.item:nth-child(3) .image {
+    background-image: url('https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw4dc42a5c/original/90_1004524-1A03180_1B000_20_OdisseaTrainers-Sneakers-versace-online-store_1_4.jpg?sw=450&sh=632&sm=fit&sfrm=jpg');
+}
+
+.head {
+    font-size: 2.625rem;
+    color: #212121;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.women-shop {
+    width: 100%;
+    height: 58.41vw;
+    display: flex;
+}
+
+.women-shop .women-image {
+    flex: 0 0 50%;
+    height: 100%;
+    background-image: url('https://www.versace.com/on/demandware.static/-/Library-Sites-ver-shared-trans/default/dwc54bc569/images/homepage/holiday-A-011222-desk.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.women-shop .women-image .women-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.women-shop .women-image .women-header .subheader {
+    padding: 0.5rem 4rem;
+}
+
+.women-item-container {
+    flex: 0 0 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.women-item {
+    display: flex;
+    width: 47%;
+    height: 67.4%;
+    flex-direction: column;
+}
+
+.women-item .image {
+    background-image: url('https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw3b797179/original/90_DG5E011-DJMX_D01O_20_CrystalLaMedusaRing-Rings-versace-online-store_13_9.jpg?sw=748&sh=1050&sm=fit');
+    background-size: cover;
+    flex: 0 0 80%;
+}
+
+.women-item .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 0 0 20%;
+} 
+
+.women-item .title .item-name {
+    margin: 0;
+    font-size: 26.04px;
+    font-weight: 1000;
+    width: 80%;
+    text-align: center;
+    line-height: 1;
+}
+
+.women-item .title .price {
+    margin: 0;
+    font-size: 12.04px;
+}
+
+.men-shop {
+    width: 100%;
+    height: 58.41vw;
+    display: flex;
+}
+
+.men-shop .men-image {
+    flex: 0 0 50%;
+    height: 100%;
+    background-image: url('https://www.versace.com/on/demandware.static/-/Library-Sites-ver-shared-trans/default/dw892349b0/images/homepage/holiday-C-011222-desk.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 4.5rem;
+}
+
+.men-shop .men-image .men-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.men-shop .men-image .men-header .subheader {
+    padding: 0.5rem 4rem;
+}
+
+.men-item-container {
+    flex: 0 0 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.men-item {
+    display: flex;
+    width: 47%;
+    height: 67.4%;
+    flex-direction: column;
+}
+
+.men-item .image {
+    background-image: url('https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw8406c35a/original/90_1008482-1A06064_1B000_10_BaroqueCrystalGridT-shirt-T-shirts-versace-online-store_0_0.jpg?sw=748&sh=1050&sm=fit');
+    background-size: cover;
+    flex: 0 0 80%;
+}
+
+.men-item .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 0 0 20%;
+} 
+
+.men-item .title .item-name {
+    margin: 0;
+    font-size: 26.04px;
+    font-weight: 1000;
+    width: 80%;
+    text-align: center;
+    line-height: 1;
+}
+
+.men-item .title .price {
+    margin: 0;
+    font-size: 12.04px;
+}
+
+.mens-bag {
+    width: 100%;
+    height: 53.438vw;
+    background-image: url('https://www.versace.com/on/demandware.static/-/Library-Sites-ver-shared-trans/default/dwe7c77fd0/images/homepage/holiday-middle-banner-011222-desk.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.bag-header {
+    position: sticky;
+    bottom: 2.5rem;
+    margin-top: auto;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.men.header {
+    padding: 0 2rem;
+    color: #fafafa;
+}
+
+.subheader {
+    transition: 0.5s;
+}
+.subheader:hover {
+    background-color: #212121;
+    color: #e0e0e0;
+}
+
+.link-column li a:hover {
+    color:#6e6e6e
+}
